@@ -1,8 +1,10 @@
 <nav class="top-nav" x-data="{ expanded: false }" x-bind:class="expanded && 'mobile'">
     <div class="top-nav__left">
-        <a class="top-nav__branding" href="{{ route('home.index') }}">
-            <img src="{{ url('/favicon.ico') }}" style="height: 35px" />
-            <span class="top-nav__site-logo">{{ \config('other.title') }}</span>
+        <!--<a class="top-nav__branding" href="{{ route('home.index') }}">-->
+            <!--<img src="{{ url('/favicon.ico') }}" style="height: 35px" />-->
+            <!--<span class="top-nav__site-logo">{{ \config('other.title') }}</span>-->
+            <a href="{{ route('home.index') }}" style="height: 32px;"><img src="{{ url('/img/ltsmall.png') }}" style="height: 32px;">
+
         </a>
         @include('partials.quick-search-dropdown')
     </div>
