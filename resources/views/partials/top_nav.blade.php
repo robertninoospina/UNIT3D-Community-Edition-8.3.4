@@ -292,11 +292,11 @@
                             Support {{ config('other.title') }} ({{ $percentage ?? 0 }}%)
                         </a>
                     </li>
-                    <li>
+                    <!--<li>
                         <a href="https://polar.sh/HDInnovations">
                             <i class="fas fa-handshake"></i>
                             Support UNIT3D Development
-                        </a>
+                        </a>-->
                     </li>
                 </ul>
             </li>
