@@ -101,7 +101,7 @@
                                         x-on:click.stop="$refs.dialog{{ $package->id }}.showModal()"
                                     >
                                         <i class="fas fa-handshake"></i>
-                                        Donate
+                                        Activar
                                     </button>
                                 </p>
                             </div>
@@ -113,7 +113,7 @@
 
         @foreach ($packages as $package)
             <dialog class="dialog" x-ref="dialog{{ $package->id }}">
-                <h4 class="dialog__heading">Donate $ {{ $package->cost }} USD</h4>
+                <h4 class="dialog__heading">Activa Tu Plan Y Ayudanos A Continuar Mejorando $ {{ $package->cost }} USD</h4>
                 <form
                     class="dialog__form"
                     method="POST"
@@ -122,7 +122,7 @@
                 >
                     @csrf
                     <span class="text-success text-center">
-                        To make a donation you must complete the following steps:
+                        Para hacer Tu Donacion Selecciona Uno De Los Siguientes Metodos De Pago disponibles:
                     </span>
                     <div class="form__group--horizontal">
                         @foreach ($gateways->sortBy('position') as $gateway)
@@ -144,12 +144,11 @@
                         @endforeach
 
                         <p class="text-info">
-                            Send
+                            Envia
                             <strong>
                                 $ {{ $package->cost }} {{ config('donation.currency') }}
                             </strong>
-                            to gateway of your choice. Take note of the tx hash, receipt number, etc
-                            and input it below.
+                            Al metodo de pago que elijas. Por favor Anota El Numero De Transaccion O Descarga El Comprobante De La Misma, Por Si Se Requiere Luego.
                         </p>
                     </div>
                     <div class="form__group--horizontal">
@@ -183,7 +182,7 @@
                     </span>
                     <p class="form__group">
                         <input type="hidden" name="package_id" value="{{ $package->id }}" />
-                        <button class="form__button form__button--filled">Donate</button>
+                        <button class="form__button form__button--filled">Activar Plan</button>
                         <button
                             formmethod="dialog"
                             formnovalidate
