@@ -161,7 +161,7 @@
                                 id="package-cost"
                             />
                             <label for="package-cost" class="form__label form__label--floating">
-                                Cost
+                                Valor
                             </label>
                         </p>
                         <p class="form__group">
@@ -173,12 +173,12 @@
                                 name="transaction"
                             />
                             <label for="proof" class="form__label form__label--floating">
-                                Tx hash, Receipt number, Etc
+                                Envia Tu Nombre De Usuario En EL Tracker Y Discord (Super Importante)
                             </label>
                         </p>
                     </div>
                     <span class="text-warning">
-                        * Transactions may take up to 48 hours to process.
+                        * Las Activaciones Pueden tardar Hasta 24 Horas (tratamos De No Demorar Tanto).
                     </span>
                     <p class="form__group">
                         <input type="hidden" name="package_id" value="{{ $package->id }}" />
