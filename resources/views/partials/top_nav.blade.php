@@ -266,7 +266,7 @@
                             class="{{ $percentage < 100 ? 'fa-fade' : '' }}"
                             style="color: lightcoral"
                         >
-                            Donate
+                            Apoya A Lat-Team
                         </span>
                         <div class="progress" style="background-color: slategray">
                             <div
@@ -289,7 +289,7 @@
                     <li>
                         <a href="{{ route('donations.index') }}">
                             <i class="fas fa-display-chart-up-circle-dollar"></i>
-                            Support {{ config('other.title') }} ({{ $percentage ?? 0 }}%)
+                            Donaciones {{ config('other.title') }} ({{ $percentage ?? 0 }}%)
                         </a>
                     </li>
                     <!--<li>
