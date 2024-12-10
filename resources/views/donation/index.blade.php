@@ -1,20 +1,20 @@
 @extends('layout.default')
 
 @section('title')
-    <title>Donate - {{ config('other.title') }}</title>
+    <title>Apoya Al Sitio - {{ config('other.title') }}</title>
 @endsection
 
 @section('meta')
-    <meta name="description" content="Donate" />
+    <meta name="description" content="Apoya Al Sitio" />
 @endsection
 
 @section('breadcrumbs')
-    <li class="breadcrumb--active">Donate</li>
+    <li class="breadcrumb--active">Apoya Al Sitio</li>
 @endsection
 
 @section('content')
     <section x-data class="panelV2">
-        <h2 class="panel__heading">Support {{ config('other.title') }}</h2>
+        <h2 class="panel__heading">Planes VIP {{ config('other.title') }}</h2>
         <div class="panel__body">
             <p>{{ config('donation.description') }}</p>
             <div class="donation-packages">
@@ -50,18 +50,18 @@
                                         <li>Custom User Icon</li>
                                     @endif
 
-                                    <li>Global Freeleech</li>
-                                    <li>Immunity To Automated Warnings (Don't Abuse)</li>
+                                    <li>Acceso Global a Freeleech</li>
+                                    <li>Proteccion Contra Advertencias Automaticas (Uso Responsable)</li>
                                     <li
                                         style="
                                             background-image: url(/img/sparkels.gif);
                                             width: auto;
                                         "
                                     >
-                                        Sparkle Effect On Username
+                                        Efecto De Destello en Tu Nombre de Usuario
                                     </li>
                                     <li>
-                                        Donor Star By Username
+                                        Icono Exclusivo para Miembros Donadores
                                         @if ($package->donor_value === null)
                                             <i
                                                 id="lifeline"
@@ -73,24 +73,24 @@
                                         @endif
                                     </li>
                                     <li>
-                                        Warm Fuzzy Feeling By Supporting
+                                        Presume Que Apoyas al Equipo Lat-Team
                                         {{ config('other.title') }}
                                     </li>
                                     @if ($package->upload_value !== null)
                                         <li>
                                             {{ App\Helpers\StringHelper::formatBytes($package->upload_value) }}
-                                            Upload Credit
+                                            Credito para Subidas
                                         </li>
                                     @endif
 
                                     @if ($package->bonus_value !== null)
                                         <li>
-                                            {{ number_format($package->bonus_value) }} Bonus Points
+                                            {{ number_format($package->bonus_value) }} Puntos Adicionales
                                         </li>
                                     @endif
 
                                     @if ($package->invite_value !== null)
-                                        <li>{{ $package->invite_value }} Invites</li>
+                                        <li>{{ $package->invite_value }} Invitaciones Disponibles</li>
                                     @endif
                                 </ol>
                             </div>
