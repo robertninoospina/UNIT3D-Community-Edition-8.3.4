@@ -25,5 +25,5 @@ return [
     'is_enabled'   => true,
     'monthly_goal' => 500,
     'currency'     => 'USD',
-    'description'  => 'Gracias por tu apoyo, con esto aseguramos que el sitio continue ofreciendote lo mejor.',
+    'description'  => 'Lat-Team te invita a convertirte en un miembro VIP para ayudar con los costos de tracker y asi poder seguir brindandote el mejor contenido. Esto te dará acceso a más privilegios, comodidades y formar parte importante de esta comunidad. Gracias por tu apoyo.',
 ];
