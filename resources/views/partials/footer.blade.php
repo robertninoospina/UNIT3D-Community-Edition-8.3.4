@@ -14,7 +14,7 @@
                     </a>
                 @endif
                 <img src="/img/logo.png" alt="Lat-Team" class="footer__icon" style="width: 250px;">
-                <a title="Apoya a Lat-Team" href="https://lat-team.com/pages/8"><img src="https://lat-team.com/img/dona.png" alt="Dona por Favor" class="footer__icon" style="width: 250px;">    
+                <a title="Apoya a Lat-Team" href="https://lat-team.xyz/donations/"><img src="https://lat-team.com/img/dona.png" alt="Dona por Favor" class="footer__icon" style="width: 250px;">    
   
                 
             </p>
@@ -260,12 +260,12 @@
             Site and design &copy;
             {{ date('Y', strtotime(config('other.birthdate'))) }}-{{ date('Y') }}
             {{ config('other.title') }} |
-            <a href="https://github.com/HDInnovations/UNIT3D-Community-Edition">
+            <!--<a href="https://github.com/HDInnovations/UNIT3D-Community-Edition">-->
                 UNIT3D {{ config('unit3d.version') }}
             </a>
             @if (config('announce.external_tracker.is_enabled'))
                 +
-                <a href="https://github.com/HDInnovations/UNIT3D-Announce">UNIT3D-Announce</a>
+                <!--<a href="https://github.com/HDInnovations/UNIT3D-Announce">UNIT3D-Announce</a>-->
             @endif
         </p>
     </div>
