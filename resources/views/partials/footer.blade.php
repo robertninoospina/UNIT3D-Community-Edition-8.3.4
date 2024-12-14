@@ -14,7 +14,7 @@
                     </a>
                 @endif
                 <img src="/img/logo.png" alt="Lat-Team" class="footer__icon" style="width: 250px;">
-                <a title="Apoya a Lat-Team" href="https://lat-team.xyz/donations/"><img src="https://lat-team.com/img/dona.png" alt="Dona por Favor" class="footer__icon" style="width: 250px;">    
+                <a title="Apoya a Lat-Team" href="https://lat-team.com/donations/"><img src="https://lat-team.com/img/dona.png" alt="Dona por Favor" class="footer__icon" style="width: 250px;">    
   
                 
             </p>
