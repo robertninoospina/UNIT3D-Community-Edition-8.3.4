@@ -83,13 +83,13 @@
                 <li>
                     <a href="{{ route('about') }}">{{ __('common.about') }}</a>
                 </li>
-                <li>
+                <!--<li>
                     <a
                         href="https://github.com/HDInnovations/UNIT3D-Community-Edition/wiki/Torrent-API-(UNIT3D-v8.x.x)"
                     >
                         API Documentation
                     </a>
-                </li>
+                </li>-->
             </ul>
         </section>
     </div>
