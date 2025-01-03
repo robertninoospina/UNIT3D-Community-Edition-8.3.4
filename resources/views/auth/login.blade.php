@@ -148,18 +148,18 @@
 
 
 <!-- Efecto de nieve -->
-    <script nonce="{{ HDVinnie\SecureHeaders\SecureHeaders::nonce('script') }}" src="https://code.jquery.com/jquery-3.7.1.min.js" crossorigin="anonymous"></script>
-    @vite('resources/js/nieve.js')
-    <script nonce="{{ HDVinnie\SecureHeaders\SecureHeaders::nonce('script') }}">
-        document.addEventListener('DOMContentLoaded', function () {
-            $.fn.snow({
-                minSize: 10,
-                maxSize: 20,
-                newOn: 1250
-            });
-            console.log("snow started");
-        });
-    </script>
+    <!--<script nonce="{{ HDVinnie\SecureHeaders\SecureHeaders::nonce('script') }}" src="https://code.jquery.com/jquery-3.7.1.min.js" crossorigin="anonymous"></script>-->
+    <!--@vite('resources/js/nieve.js')-->
+    <!--<script nonce="{{ HDVinnie\SecureHeaders\SecureHeaders::nonce('script') }}">-->
+        <!--document.addEventListener('DOMContentLoaded', function () {-->
+            <!--$.fn.snow({-->
+                <!--minSize: 10,-->
+                <!--maxSize: 20,-->
+                <!--newOn: 1250-->
+            <!--});-->
+            <!--console.log("snow started");-->
+        <!--});-->
+    <!--</script>-->
 
                         
     </body>
